@@ -42,7 +42,7 @@ import {
   rankWith,
   StatePropsOfArrayControl,
   uiTypeIs
-} from '@jsonforms/core';
+} from '@jsonforms/core/src/index';
 
 const keywords = ['#', 'properties', 'items'];
 
