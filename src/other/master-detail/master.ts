@@ -28,7 +28,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import {
   JsonFormsAngularService,
   JsonFormsArrayControl
-} from '@jsonforms/angular';
+} from '@jsonforms/angular/src/index';
 import {
   ArrayControlProps,
   ControlElement,
@@ -136,6 +136,10 @@ export const removeSchemaKeywords = (path: string) => {
     `
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
+})
+
+@Component({
+  template: ''
 })
 export class MasterListComponent extends JsonFormsArrayControl {
   masterItems: any[];
